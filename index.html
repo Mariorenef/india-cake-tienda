@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Pan Dulces</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <!-- Podés reemplazar por una imagen -->
+            <!-- <img src="img/logo.png" alt="Logo"> -->
+            <span class="logo-text">India Cake</span>
+        </div>
+        <nav class="nav">
+            <a href="#productos">Pan dulces</a>
+            <a href="#medios-pago">Medios de pago</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Pan dulces artesanales para estas fiestas 🎄</h1>
+            <p>Elegí tu favorito, sumalo al carrito y confirmá el pedido por WhatsApp. Pagá con transferencia o MODO.
+            </p>
+            <a href="#productos" class="btn-primario">Ver pan dulces</a>
+        </div>
+    </section>
+
+    <main class="main">
+        <!-- SECCIÓN PRODUCTOS -->
+        <section id="productos" class="productos">
+            <h2>Productos</h2>
+            <p class="subtitulo">Seleccioná cantidad y agregá al carrito</p>
+
+            <!-- 🥮 PAN DULCES -->
+            <h3>Pan dulces</h3>
+            <div class="grid-productos">
+
+                <!-- PAN DULCE 1 -->
+                <article class="card producto" data-nombre="Pan dulce de Pistacho" data-precio="20900">
+                    <img src="img/thumbnail_IMG_0121.jpg" alt="Pan dulce de Pistacho">
+                    <div class="card-body">
+                        <h3>Pan dulce de Pistacho</h3>
+                        <p class="descripcion">Masa suave, baño de chocolate blanco, pistachos tostados y relleno
+                            cremoso.</p>
+                        <p class="price">$20.900</p>
+                        <div class="acciones">
+                            <label>
+                                Cantidad:
+                                <input type="number" min="1" value="1" class="cantidad-input">
+                            </label>
+                            <button class="btn-secundario btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PAN DULCE 2 -->
+                <article class="card producto" data-nombre="Pan dulce con chips" data-precio="12900">
+                    <img src="img/thumbnail_IMG_0120.jpg" alt="Pan dulce con chips">
+                    <div class="card-body">
+                        <h3>Pan dulce con chips</h3>
+                        <p class="descripcion">Clásico, esponjoso y con muchas chips de chocolate.</p>
+                        <p class="price">$12.900</p>
+                        <div class="acciones">
+                            <label>
+                                Cantidad:
+                                <input type="number" min="1" value="1" class="cantidad-input">
+                            </label>
+                            <button class="btn-secundario btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PAN DULCE 3 -->
+                <article class="card producto" data-nombre="Pan dulce de frutos secos" data-precio="12900">
+                    <img src="img/thumbnail_IMG_0130.jpg" alt="Pan dulce de frutos secos">
+                    <div class="card-body">
+                        <h3>Pan dulce de frutos secos</h3>
+                        <p class="descripcion">Con nueces, almendras, castañas y frutas abrillantadas.</p>
+                        <p class="price">$12.900</p>
+                        <div class="acciones">
+                            <label>
+                                Cantidad:
+                                <input type="number" min="1" value="1" class="cantidad-input">
+                            </label>
+                            <button class="btn-secundario btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- 🍨 POSTRES EN POTECITOS -->
+            <h3>Postres en potecito</h3>
+            <div class="grid-productos">
+
+                <!-- OREO -->
+                <article class="card producto" data-nombre="Postre Oreo en potecito" data-precio="3900">
+                    <img src="img/thumbnail_IMG_0022.jpg" alt="Postre Oreo en potecito">
+                    <div class="card-body">
+                        <h3>Postre Oreo</h3>
+                        <p class="descripcion">Base de galletita Oreo, dulce de leche y crema. Bien cargado.</p>
+                        <p class="price">$4.500</p>
+                        <div class="acciones">
+                            <label>
+                                Cantidad:
+                                <input type="number" min="1" value="1" class="cantidad-input">
+                            </label>
+                            <button class="btn-secundario btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CHOCOTORTA -->
+                <article class="card producto" data-nombre="Chocotorta en potecito" data-precio="3900">
+                    <img src="img/thumbnail_IMG_0034.jpg" alt="Chocotorta en potecito">
+                    <div class="card-body">
+                        <h3>Chocotorta</h3>
+                        <p class="descripcion">Clásica chocotorta bien húmeda en formato individual.</p>
+                        <p class="price">$4.500</p>
+                        <div class="acciones">
+                            <label>
+                                Cantidad:
+                                <input type="number" min="1" value="1" class="cantidad-input">
+                            </label>
+                            <button class="btn-secundario btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TIRAMISÚ -->
+                <article class="card producto" data-nombre="Tiramisú en potecito" data-precio="4200">
+                    <img src="img/thumbnail_IMG_0040.jpg" alt="Tiramisú en potecito">
+                    <div class="card-body">
+                        <h3>Tiramisú</h3>
+                        <p class="descripcion">Café, mascarpone y cacao. Versión cremosa en vasito.</p>
+                        <p class="price">$4.500</p>
+                        <div class="acciones">
+                            <label>
+                                Cantidad:
+                                <input type="number" min="1" value="1" class="cantidad-input">
+                            </label>
+                            <button class="btn-secundario btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- 🥐 LAMINADOS -->
+            <h3>Laminados</h3>
+            <div class="grid-productos">
+
+                <!-- CROISSANT -->
+                <article class="card producto" data-nombre="Croissant de manteca" data-precio="2800">
+                    <img src="img/IMG_0010.jpeg" alt="Croissant de manteca">
+                    <div class="card-body">
+                        <h3>Croissant de manteca</h3>
+                        <p class="descripcion">Hojaldre bien laminado, crujiente por fuera y tierno por dentro.</p>
+                        <p class="price">$2.800</p>
+                        <div class="acciones">
+                            <label>
+                                Cantidad:
+                                <input type="number" min="1" value="1" class="cantidad-input">
+                            </label>
+                            <button class="btn-secundario btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- DANESA -->
+                <article class="card producto" data-nombre="Danesa de crema pastelera" data-precio="3200">
+                    <img src="img/IMG_9326.jpeg" alt="Danesa de crema pastelera">
+                    <div class="card-body">
+                        <h3>Danesa</h3>
+                        <p class="descripcion">Masa laminada con crema pastelera y glasé suave.</p>
+                        <p class="price">$3.200</p>
+                        <div class="acciones">
+                            <label>
+                                Cantidad:
+                                <input type="number" min="1" value="1" class="cantidad-input">
+                            </label>
+                            <button class="btn-secundario btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PAN DE CHOCOLATE -->
+                <article class="card producto" data-nombre="Pan de chocolate" data-precio="3500">
+                    <img src="img/IMG_0134.jpeg" alt="Pan de chocolate laminado">
+                    <div class="card-body">
+                        <h3>Pan de chocolate</h3>
+                        <p class="descripcion">Masa hojaldrada con barritas de chocolate por dentro.</p>
+                        <p class="price">$3.500</p>
+                        <div class="acciones">
+                            <label>
+                                Cantidad:
+                                <input type="number" min="1" value="1" class="cantidad-input">
+                            </label>
+                            <button class="btn-secundario btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- SECCIÓN CARRITO -->
+        <aside class="carrito">
+            <h2>Tu pedido 🛒</h2>
+            <ul id="carrito-lista" class="carrito-lista">
+                <li class="carrito-vacio">Todavía no agregaste nada al carrito.</li>
+            </ul>
+            <div class="carrito-total">
+                <span>Total:</span>
+                <span id="carrito-total-valor">$0</span>
+            </div>
+            <button id="btn-whatsapp" class="btn-primario btn-whatsapp" disabled>
+                Confirmar pedido por WhatsApp
+            </button>
+            <p class="carrito-ayuda">👆 Primero agregá productos al carrito y después confirmá el pedido.</p>
+        </aside>
+
+        <!-- SECCIÓN MEDIOS DE PAGO -->
+        <section id="medios-pago" class="info">
+            <h2>Medios de pago</h2>
+            <ul class="lista-info">
+                <li>💳 Transferencia bancaria o MODO</li>
+                <li>📍 Retiro por San Miguel</li>
+                <li>📆 Encargá con anticipación para asegurar tu fecha</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="info">
+            <h2>Contacto</h2>
+            <p>Si tenés dudas especiales o querés un pedido grande, escribime directo:</p>
+            <a href="https://wa.me/5491153142220" target="_blank" class="btn-secundario">
+                Escribirme por WhatsApp
+            </a>
+        </section>
+    </main>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/5491153142220" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <img src="img/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+
+
+    <footer class="footer">
+        <p>© <span id="year"></span> India Cake · Hecho con amor en San Miguel</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
